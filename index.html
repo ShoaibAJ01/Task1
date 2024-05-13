@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to create a registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <form id="data">
+        <h2>Registration</h2><br>
+        <h3>Personal details</h3>
+        <div class="container">
+            <div class="first-div">
+                <h6>Full Name</h6>
+                <input type="text" placeholder="Enter your name ">
+            </div>
+            <div class="first-div">
+                <h6>Date of Birth</h6>
+                <input type="text" placeholder="Enter birth date ">
+            </div>
+            <div class="first-div">
+                <h6>Email</h6>
+                <input type="email" placeholder="Enter your email ">
+            </div>
+            <div class="first-div">
+                <h6>Mobile Number</h6>
+                <input type="text" placeholder="Enter mobile number ">
+            </div>
+            <div class="first-div">
+                <h6>Gender</h6>
+                <input type="text" placeholder="Enter your gender ">
+            </div>
+            <div class="first-div">
+                <h6>Occupation</h6>
+                <input type="text" placeholder="Enter occupation ">
+            </div>
+
+        </div>
+        <h3>Identity details</h3>
+        <div class="container">
+
+            <div class="first-div">
+                <h6>ID Type</h6>
+                <input type="text" placeholder="Enter ID type ">
+            </div>
+            <div class="first-div">
+                <h6>ID Number</h6>
+                <input type="text" placeholder="Enter ID Number ">
+            </div>
+            <div class="first-div">
+                <h6>Issue Authority</h6>
+                <input type="text" placeholder="Enter issue department ">
+            </div>
+            <div class="first-div">
+                <h6>Issue Date</h6>
+                <input type="text" placeholder="Enter ID issue date ">
+            </div>
+            <div class="first-div">
+                <h6>Issue State</h6>
+                <input type="text" placeholder="Enter ID issue state ">
+            </div>
+            <div class="first-div">
+                <h6>Expiry Date</h6>
+                <input type="text" placeholder="Enter ID expiry date">
+            </div>
+
+        </div>
+
+        <button onclick="printpage()" class="btn">Next</button>
+    </form>
+</body>
+<script type="text/javascript">
+   
+    function printpage() {
+        //window.print();
+        var body = document.getElementById('body').innerHTML;
+        var data = document.getElementById('data').innerHTML;
+       // document.getElementById('body').innerHTML = data;
+     window.print();
+        document.getElementById('body').innerHTML = body;
+    }
+
+</script>
+</html>
